@@ -25,16 +25,16 @@ const workOptions: WorkOption[] = [
 
 const questions = [
   "간략하게 자기 소개 부탁드려요.",
-  "오 회계사로 일하셨군요? 왜 회계사란 직업을 선택하셨나요?",
+  "회계사로 일하셨군요? 왜 회계사란 직업을 선택하셨나요?",
   "회계사로 일하던 중, 가장 즐거웠던 에피소드를 하나 말해주세요.",
   "앞으로 어떤 분야에서 일하고 싶으세요?"
 ]
 
 const responses = [
-  "안녕하세요, 저는 김미경이라고 합니다... 20년 넘게 회계사로 일해왔고, 새로운 일에 한 번 도전을 해보고 싶네요..",
+  "안녕하세요, 제 이름은 김미경이고요.. 20년 넘게 회계사로 일해왔고, 새로운 일에 한 번 도전을 해보고 싶네요..",
   "회계사라는 직업을 선택한 이유는 숫자나 데이터를 다루는 게 좋아서 였어요.. 그리고... 고객의 재무 상황을 개선하는 데 기여할 때 큰 보람을 느끼기도 했고요",
-  "음... 제일 재미있던 순간? 솔직히 말하면 그때는 워낙 바빠서 재미 느낄 겨를도 별로 없었는데 지금 생각해보면... 아 막 떠오르는 게 하나 있네...",
-  "음... 앞으로 누군가를 가르치는 일을 해보고 싶어요. 그런데서 보람을 느낄 수 있을 것 같고, 제 경험을 다른 사람들과 나누는 것도 좋을 것 같아요."
+  "후배들에게 저의 노하우를 전수해주고, 그 친구들이 성장하는게 보일 때 정말 즐거웠어요. 최근 한 후배가 큰 성과를 낸 적이 있는데, 그때 정말 뿌듯했죠.",
+  "앞으로 누군가를 가르치는 일을 해보고 싶어요. 그런데서 보람을 느낄 수 있을 것 같고, 제 경험을 다른 사람들과 나누는 것도 좋을 것 같아요."
 ]
 
 export default function CareerCounselingApp() {
@@ -63,7 +63,7 @@ export default function CareerCounselingApp() {
         setIsRecording(false)
         setShowResponse(true)
         setCurrentScreen("conversation")
-      }, 10000) // 10 seconds
+      }, 8000) // 8 seconds
     }
 
     return () => {
@@ -224,7 +224,7 @@ export default function CareerCounselingApp() {
                           {barHeights.map((height, i) => (
                             <div
                               key={i}
-                              className="w-1 bg-white/60 rounded-full transition-all duration-150"
+                              className="w-1 bg-white/60 rounded-full transition-all duration-100"
                               style={{ height: `${height}px` }}
                             ></div>
                           ))}
